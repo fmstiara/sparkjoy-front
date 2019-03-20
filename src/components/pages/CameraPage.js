@@ -8,7 +8,7 @@ class CameraPage extends React.Component {
     this.state = {
       HOST: 'https://japaneast.api.cognitive.microsoft.com/face/v1.0/',
       PERSON_GROUP_ID: 'test-members',
-      API_KEY: ''
+      API_KEY: 'd2d8c88fbb9f468baf72986c2f18df72'
     }
   }
 
