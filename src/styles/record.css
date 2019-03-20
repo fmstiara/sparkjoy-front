@@ -6,6 +6,7 @@
   border-radius: 0 0 40px 40px;
 
   position: relative;
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
 }
 
 #record-header-button{
@@ -72,7 +73,7 @@
 
   background-color: #047073;
   border-radius: 0 0 40px 40px;
-
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
 }
 
 .record-list-item{

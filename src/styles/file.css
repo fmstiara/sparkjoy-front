@@ -4,6 +4,7 @@
 
   background-color: #ff7f96;
   border-radius: 0 0 40px 40px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
 }
 
 #file-container{
