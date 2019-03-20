@@ -1,0 +1,19 @@
+#record-header{
+  width: 100%;
+  height: 80px;
+
+  background-color: #047073;
+  border-radius: 0 0 40px 40px;
+}
+
+#record-container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/bg_log_pc.svg');
+}
+
+@media screen and (max-width: 375px) {
+  #record-container{
+    background-image: url('./images/bg_log.svg');
+  }
+}

@@ -11,7 +11,7 @@ class Home extends React.Component {
   render(){
     return(
       <div id="home-container">
-        <div id="header"><img src="images/logo_kari.svg"/></div>
+        <div id="home-header"><img src="images/logo_kari.svg"/></div>
         <div className="container">
           <div className="row">
             <div className="col-md-6 margin-top">

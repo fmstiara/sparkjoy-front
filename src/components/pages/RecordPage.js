@@ -1,10 +1,14 @@
 import React from 'react'
-
+import '../../styles/record.css'
 class RecordPage extends React.Component {
   render(){
     return(
-      <div>
-        <h1>record</h1>
+      <div id="record-container">
+        <div id="record-header">
+        
+        </div>
+        <div className="container">
+        </div>
       </div>
     )
   }
