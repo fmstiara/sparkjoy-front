@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="35px" viewBox="0 0 44 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Orion_reload</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8-Copy-14" transform="translate(-362.000000, -374.000000)">
+            <g id="Orion_reload" transform="translate(364.000000, 376.000000)">
+                <circle id="Oval" fill="#F3B4B7" cx="23.5" cy="17.5" r="15.5"></circle>
+                <path d="M35.1606667,13.4266667 C35.9748702,19.9274997 32.5691131,26.2275401 26.6840884,29.106818 C20.7990636,31.9860959 13.7348545,30.8085389 9.102,26.176" id="Path" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4.71,17.08 C4.21384013,12.7377949 5.59354434,8.39013608 8.50270997,5.12859121 C11.4118756,1.86704634 15.574207,0.00137801131 19.9446667,9.94759745e-14 C24.0115104,-0.00539423729 27.9129304,1.60968136 30.786,4.488" id="Path" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Path" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0 10.6666667 4.71 17.0793333 10.6666667 12"></polyline>
+                <polyline id="Path" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="40 20 35.1606667 13.4266667 29.3333333 18.6666667"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

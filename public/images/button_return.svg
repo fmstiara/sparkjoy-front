@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="37px" viewBox="0 0 46 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Orion_undo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8-Copy-14" transform="translate(-275.000000, -373.000000)">
+            <g id="Group" transform="translate(277.000000, 375.000000)">
+                <g id="Orion_undo" transform="translate(22.000000, 17.500000) scale(1, -1) translate(-22.000000, -17.500000) ">
+                    <path d="M4.44190476,22.4 L33.9428571,22.4 C39.4972638,22.4 44,17.3855892 44,11.2 C44,5.0144108 39.4972638,0 33.9428571,0 L3.77142857,0" id="Path" fill="#67BAB7"></path>
+                    <path d="M0.67047619,26.6 L30.1714286,26.6 C35.7258352,26.6 40.2285714,21.5855892 40.2285714,15.4 C40.2285714,9.2144108 35.7258352,4.2 30.1714286,4.2 L0,4.2" id="Path" stroke="#202020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path" stroke="#202020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="9.05714286 18.2 0.257142857 26.6 9.05714286 35"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
