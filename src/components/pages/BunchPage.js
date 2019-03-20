@@ -4,29 +4,30 @@ class BunchPage extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-        leader_id: 1,
-        users: [
-            {
-                id: 1,
-                name: "Alice",
-                product_team_name: "unipos",
-                score_sum: 5
-            },
-            {
-                id: 2,
-                name: "Bob",
-                product_team_name: "unipos",
-                score_sum: 10
-            },
-            {
-                id: 3,
-                name: "Charlie",
-                product_team_name: "dAd",
-                score_sum: 10
-            }
-        ]
-}
+      leader_id: 1,
+      users: [
+        {
+          id: 1,
+          name: "Alice",
+          product_team_name: "unipos",
+          score_sum: 5
+        },
+        {
+          id: 2,
+          name: "Bob",
+          product_team_name: "unipos",
+          score_sum: 10
+        },
+        {
+          id: 3,
+          name: "Charlie",
+          product_team_name: "dAd",
+          score_sum: 10
+        }
+      ]
+    }
   }
+
   render(){
     return(
       <div id="bunch-container">
@@ -47,6 +48,5 @@ class BunchPage extends React.Component {
     )
   }
 }
-
 
 export default BunchPage;
