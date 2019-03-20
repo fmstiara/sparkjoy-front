@@ -8,7 +8,7 @@ class CameraPage extends React.Component {
     this.state = {
       HOST: 'https://japaneast.api.cognitive.microsoft.com/face/v1.0/',
       PERSON_GROUP_ID: 'test-members',
-      API_KEY: ''
+      API_KEY: 'd2d8c88fbb9f468baf72986c2f18df72'
     }
   }
 
@@ -23,7 +23,7 @@ class CameraPage extends React.Component {
           <div className="mask" id="last-layer"></div>
           <div id="ui-area" className="row">
             <div className="col-4">
-              <button id="back-button"><img src="images/button_return.svg" alt="take"/></button>
+              <button><img src="images/button_return.svg" alt="take"/></button>
             </div>
             <div className="col-4">
               <button id="take-button"><img src="images/button_satsuei.svg" alt="take"/></button>

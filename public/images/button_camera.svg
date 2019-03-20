@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="241px" viewBox="0 0 201 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M30.5839037,14.767953 L169.63023,11.119763 C180.672125,10.8300543 189.858205,19.5464236 190.147914,30.5883186 C190.161739,31.1152463 190.154728,31.6425146 190.126896,32.1688884 L180.649531,211.413074 C180.066316,222.443362 170.651711,230.912386 159.621424,230.32917 C159.107883,230.302017 158.595581,230.255068 158.085659,230.188426 L32.4766067,213.772509 C22.7047782,212.495423 15.3196479,204.290415 15.0745635,194.438536 L11.1146534,35.2584571 C10.8402196,24.2267913 19.5526212,15.0573832 30.5839037,14.767953 Z" id="path-1"></path>
+        <filter x="-8.4%" y="-6.9%" width="116.9%" height="113.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="メイン（WEB）" transform="translate(-120.000000, -231.000000)">
+            <g id="Group-13" transform="translate(121.000000, 228.000000)">
+                <g id="Group-7" transform="translate(0.000000, 4.000000)">
+                    <g id="Group-8">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M19.4730036,6.07790372 C9.8206314,6.33115519 2.19727998,14.3543873 2.43740961,24.0070948 L6.39731968,183.187174 C6.61176853,191.807568 13.0737575,198.98695 21.6241075,200.1044 L147.233159,216.520317 C147.679341,216.578629 148.127606,216.61971 148.576954,216.643469 C158.228455,217.153782 166.466234,209.743386 166.976548,200.091884 L176.453913,20.8476985 C176.478265,20.3871214 176.4844,19.9257617 176.472303,19.4647 C176.218808,9.80304176 168.180988,2.17621866 158.51933,2.42971378 L19.4730036,6.07790372 Z" id="Rectangle" stroke="#000000" stroke-width="5"></path>
+                    </g>
+                    <g id="Orion_camera" transform="translate(55.882353, 68.378378)">
+                        <path d="M75.751634,12.4324324 L60.3529412,12.4324324 L52.1568627,2.48648649 L32.2875817,2.48648649 L24.0915033,12.4324324 L8.69281046,12.4324324 C6.63527904,12.4324324 4.96732026,14.1022893 4.96732026,16.1621622 L4.96732026,53.4594595 C4.96732026,55.5193323 6.63527904,57.1891892 8.69281046,57.1891892 L75.751634,57.1891892 C77.8091654,57.1891892 79.4771242,55.5193323 79.4771242,53.4594595 L79.4771242,16.1621622 C79.4771242,14.1022893 77.8091654,12.4324324 75.751634,12.4324324 Z" id="Path" fill="#FED568"></path>
+                        <path d="M70.7843137,9.94594595 L55.3856209,9.94594595 L47.1895425,0 L27.3202614,0 L19.124183,9.94594595 L3.7254902,9.94594595 C1.66795878,9.94594595 5.51483332e-16,11.6158028 0,13.6756757 L0,50.972973 C5.51483332e-16,53.0328458 1.66795878,54.7027027 3.7254902,54.7027027 L70.7843137,54.7027027 C72.8418451,54.7027027 74.5098039,53.0328458 74.5098039,50.972973 L74.5098039,13.6756757 C74.5098039,11.6158028 72.8418451,9.94594595 70.7843137,9.94594595 Z" id="Path" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse id="Oval" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="37.254902" cy="29.8378378" rx="17.3856209" ry="17.4054054"></ellipse>
+                        <ellipse id="Oval" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="64.5751634" cy="19.8918919" rx="1.24183007" ry="1.24324324"></ellipse>
+                        <ellipse id="Oval" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="37.254902" cy="29.8378378" rx="7.45098039" ry="7.45945946"></ellipse>
+                    </g>
+                    <text id="撮影" font-family="RoundedMplus1c-Bold, Rounded Mplus 1c Bold" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="75.751634" y="165.135135">撮影</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

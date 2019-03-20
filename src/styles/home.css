@@ -1,0 +1,37 @@
+a{
+  display: block;
+  width: 80%;
+  margin: 50px auto;
+}
+
+img{
+  width: 100%;
+}
+
+#header img{
+  height: 100%;
+}
+
+#header{
+  width: 100%;
+  height: 80px;
+
+  background-color: #ffb900;
+  border-radius: 0 0 40px 40px;
+}
+
+#home-container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/bg_main_pc.svg');
+}
+
+@media screen and (max-width: 375px) {
+  #home-container{
+    background-image: url('./images/bg_main.svg');
+  }
+}
+
+.margin-top{
+  margin-top: 10%;
+}

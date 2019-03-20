@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="198px" height="241px" viewBox="0 0 198 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M33.2450148,12.1739386 L164.694197,19.2819549 C175.146331,19.8471462 183.394627,28.3759779 183.610053,38.8411644 L187.031019,205.027845 C187.255807,215.947837 178.678281,225.028657 167.763214,225.426207 L42.5171477,229.987933 C31.6163068,230.384964 22.4077946,221.973969 21.8184047,211.081834 L12.1943238,33.2254117 C11.5974976,22.1958525 20.0548988,12.7708049 31.084458,12.1739788 C31.8041168,12.1350369 32.5253545,12.1350235 33.2450148,12.1739386 Z" id="path-1"></path>
+        <filter x="-8.8%" y="-7.0%" width="117.4%" height="114.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="メイン（WEB）" transform="translate(-435.000000, -231.000000)">
+            <g id="Group-13" transform="translate(121.000000, 228.000000)">
+                <g id="Group-9" transform="translate(315.000000, 4.000000)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M20.6596952,2.23785915 C20.0299925,2.20380844 19.3989095,2.20382017 18.769208,2.23789427 C9.11834372,2.76011718 1.71811772,11.0070338 2.24034063,20.6578981 L11.8644215,198.514321 C12.3801377,208.044938 20.4375859,215.404559 29.9758217,215.057157 L155.221888,210.495431 C164.772572,210.147575 172.277907,202.201857 172.081217,192.646865 L168.660252,26.4601837 C168.471754,17.3031455 161.254494,9.84041786 152.108877,9.34587546 L20.6596952,2.23785915 Z" id="Rectangle" stroke="#000000" stroke-width="5"></path>
+                    <g id="Orion_upload" transform="translate(68.476821, 48.486486)">
+                        <polyline id="Path" fill="#F3B4B7" points="38.5960265 36.0540541 51.0463576 36.0540541 51.0463576 77.0810811 6.22516556 77.0810811 6.22516556 36.0540541 18.6754967 36.0540541"></polyline>
+                        <polyline id="Path" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="32.3708609 32.3243243 44.8211921 32.3243243 44.8211921 73.3513514 0 73.3513514 0 32.3243243 12.4503311 32.3243243"></polyline>
+                        <path d="M22.410596,50.972973 L22.410596,0 M36.1059603,16.1621622 L22.410596,0 L8.71523179,16.1621622" id="Shape" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <text id="アップロード" font-family="RoundedMplus1c-Bold, Rounded Mplus 1c Bold" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="45.3774834" y="165.135135">アップロード</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
