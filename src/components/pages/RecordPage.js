@@ -5,7 +5,6 @@ class RecordPage extends React.Component {
     return(
       <div id="record-container">
         <div id="record-header">
-        
         </div>
         <div className="container">
         </div>
