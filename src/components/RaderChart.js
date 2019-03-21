@@ -11,13 +11,16 @@ const MAX_DIVERSITY_POINT = 10
 class RaderChart extends React.Component {
   constructor(props){
     super(props)
-    console.log(this.props)
   }
 
   render(){
     return (
       <div>
         <canvas id="rader-canvas"></canvas>
+        <div className="score-area">
+          <p className="score my-score">個人スコア<span className="score-text">{this.getUserScore()}</span></p>
+          <p className="score bunch-score">バンチスコア<span className="score-text">{this.getBunchScore()}</span></p>
+        </div>
       </div>
     )
   }
@@ -27,19 +30,34 @@ class RaderChart extends React.Component {
   }
 
   componentDidUpdate(){
-    console.log(this.props)
     this.draw()
+  }
+
+  getUserScore(){
+    if(this.props.event_records["event_records"] == undefined){
+      return ""
+    }
+    return this.props.event_records["event_records"]["user_score"]
+  }
+
+  getBunchScore(){
+    if(this.props.event_records["event_records"] == undefined){
+      return ""
+    }
+    return this.props.event_records["event_records"]["bunch_score"]
   }
 
   draw(){
     const self = this
     const canvas = document.getElementById('rader-canvas')
+    canvas.style.height = '40vh;'
     const data = this.props.event_records["event_records"]
     if(data == undefined){
       return
     }
+    console.log(data)
     const user_points = data["user_points"]
-    
+
     new Chart(canvas, {
       type: 'radar',
       data: {

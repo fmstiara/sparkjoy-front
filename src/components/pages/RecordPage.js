@@ -3,6 +3,7 @@ import $ from 'jquery'
 import '../../styles/record.css'
 
 import RaderChart from '../RaderChart.js'
+import LineChart from '../LineChart.js'
 
 class RecordPage extends React.Component {
   constructor(props){
@@ -16,7 +17,7 @@ class RecordPage extends React.Component {
       },
       events: [],
       eventRecords: {},
-      bunchRecords: []
+      bunchRecords: {}
 
     }
   }
@@ -61,16 +62,21 @@ class RecordPage extends React.Component {
         </div>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6" id="my-record">
+            <div className="col-md-6 graph" id="my-record">
               <RaderChart event_records={this.state.eventRecords} />
             </div>
-            <div className="col-md-6" id="all-record">
-              ALL
+            <div className="col-md-6 graph" id="all-record">
+              <LineChart bunch_records={this.state.bunchRecords} />
             </div>
           </div>
         </div>
+
+        <button id="record-back-button" onClick={this.back}><img src="images/button_return_green.svg" alt="back"/></button>
       </div>
     )
+  }
+  back(){
+    document.location.href = '/'
   }
 
   setEvent(event){
@@ -104,7 +110,7 @@ class RecordPage extends React.Component {
         this.setState({
           eventRecords: data
         });
-        console.log(this.state.eventRecords["event_records"]["user_points"])
+        console.log(this.state.eventRecords)
       })
       .fail((err) => {
         console.error(err);
@@ -115,7 +121,7 @@ class RecordPage extends React.Component {
         this.setState({
           bunchRecords: data
         });
-        console.log(this.state.bunchRecords)
+        console.log(this.state.bunchRecords["bunch_records"])
       })
       .fail((err) => {
         console.error(err);
