@@ -9,7 +9,10 @@ class RecordPage extends React.Component {
       displayEvent: {
         date: ""
       },
-      events: []
+      events: [],
+      eventRecords: [],
+      bunchRecords: []
+
     }
   }
 
@@ -26,7 +29,8 @@ class RecordPage extends React.Component {
       this.setState({
         displayEvent: data.events[data.events.length - 1],
         events: data.events
-      });
+      })
+      this.changeRecord(this.state.displayEvent)
     })
     .fail(function(err) {
         console.error(err);
@@ -64,8 +68,33 @@ class RecordPage extends React.Component {
   setEvent(event){
     console.log(event)
     this.setState({displayEvent: event})
+    this.changeRecord(this.state.displayEvent)
+  }
+
+  changeRecord(displayEvent){
+    $.ajax({url: 'http://localhost:3001/test2'})
+    .done((data) => {
+      this.setState({
+        eventRecords: data
+      });
+      console.log(this.state.eventRecords)
+    })
+    .fail(function(err) {
+      console.error(err);
+    })
+
+    $.ajax({url: 'http://localhost:3001/test3'})
+    .done((data) => {
+      this.setState({
+        bunchRecords: data
+      });
+      console.log(this.state.bunchRecords)
+    })
+    .fail(function(err) {
+      console.error(err);
+    })
+
   }
 }
-
 
 export default RecordPage;
