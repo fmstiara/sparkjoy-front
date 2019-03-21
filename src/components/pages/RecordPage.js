@@ -1,4 +1,5 @@
 import React from 'react'
+import $ from 'jquery'
 import '../../styles/record.css'
 class RecordPage extends React.Component {
   constructor(props){
@@ -8,25 +9,29 @@ class RecordPage extends React.Component {
       bunchRecord: {
         date: "2019-03"
       },
-      events: [
-        {
-            "id": 10,
-            "name": "event1",
-            "date": "2019-01"
-        },
-        {
-            "id": 11,
-            "name": "event2",
-            "date": "2019-02"
-        },
-        {
-            "id": 12,
-            "name": "event3",
-            "date": "2019-03"
-        }
-      ]
+      events: []
     }
   }
+
+  componentWillMount(){
+    this.fetchResponse();
+  }
+
+  fetchResponse(){
+    $.ajax({
+        url: 'http://localhost:3001/test1',
+        ype: "GET"
+    })
+    .done((data) => {
+      this.setState({
+        events: data.events
+      });
+    })
+    .fail(function(err) {
+        console.error(err);
+    })
+  }
+
   render(){
     return(
       <div id="record-container">

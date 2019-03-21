@@ -1,21 +1,23 @@
 {
-    "test1": [
-        {
-            "id": 10,
-            "name": "event1",
-            "date": "2019-01"
-        },
-        {
-            "id": 11,
-            "name": "event2",
-            "date": "2019-02"
-        },
-        {
-            "id": 12,
-            "name": "event3",
-            "date": "2019-03"
-        }
-    ],
+    "test1": {
+        "events": [
+            {
+                "id": 10,
+                "name": "event1",
+                "date": "2019-01"
+            },
+            {
+                "id": 11,
+                "name": "event2",
+                "date": "2019-02"
+            },
+            {
+                "id": 12,
+                "name": "event3",
+                "date": "2019-03"
+            }
+        ]
+    },
     "test2": {
         "user_points": {
             "laugh_stg": 0.5,
