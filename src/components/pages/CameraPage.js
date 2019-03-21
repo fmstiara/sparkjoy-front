@@ -9,7 +9,14 @@ class CameraPage extends React.Component {
     this.state = {
       HOST: 'https://japaneast.api.cognitive.microsoft.com/face/v1.0/',
       PERSON_GROUP_ID: 'test-members',
-      API_KEY: 'd2d8c88fbb9f468baf72986c2f18df72'
+      API_KEY: 'd2d8c88fbb9f468baf72986c2f18df72',
+      people: {
+        person_id: '',
+        smile_point: null,
+        face_id: ''
+      },
+      taken_by: null,
+      event_id: null
     }
   }
 
@@ -128,6 +135,7 @@ class CameraPage extends React.Component {
   }
   
   detect(image_url){
+    const self = this
     return new Promise((resolve, reject)=>{
       fetch(image_url).then(res => res.blob())
       .then(blobData => {
@@ -151,6 +159,15 @@ class CameraPage extends React.Component {
         .done(function(data) {
           console.log('detect')
           console.log(data)
+          for (let i = 0; i < data.length; i++) {
+            const input_people = {
+              smile_point: data[i].faceAttributes.emotion.happiness.toFixed(1),
+              face_id: data[i].faceId
+            }
+            self.setState({
+              people: input_people
+            })
+          }
           resolve(data)
         })
         .fail(function(err) {
@@ -162,6 +179,7 @@ class CameraPage extends React.Component {
   }
   
   identify(faceIds = []){
+    const self = this
     const url = this.state.HOST + "identify"
     
     $.ajax({
@@ -181,7 +199,15 @@ class CameraPage extends React.Component {
     })
     .done(function(data) {
       console.log('identify')
-      console.log(data)
+      for (let i = 0; i < data.length; i++) {
+        const target = data[i].faceId
+        console.log(target)
+        Object.keys(self.state.people).forEach((key) => {
+          if (key === 'face_id' && target === self.state.people[key]) {
+            console.log(data[i].candidates[0].personId)
+          }
+        })
+      }
     })
     .fail(function(err) {
         console.error(err);
