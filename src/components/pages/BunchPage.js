@@ -1,36 +1,33 @@
 import React from 'react'
+import $ from 'jquery'
+
 import '../../styles/bunch.css'
 class BunchPage extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      bunchName: "20卒バンチ",
-      bunchInfo: {
-        "leader_id": 1,
-        "users": [
-            {
-                "id": 1,
-                "name": "Alice",
-                "product_team_name": "unipos",
-                "score_sum": 5
-            },
-            {
-                "id": 2,
-                "name": "Bob",
-                "product_team_name": "unipos",
-                "score_sum": 10
-            },
-            {
-                "id": 3,
-                "name": "Charlie",
-                "product_team_name": "dAd",
-                "score_sum": 10
-            }
-        ]
-      }
+        bunchName: '20卒バンチ',
+        leader_id: null,
+        users: []
     }
   }
 
+  componentWillMount(){
+    this.fetchResponse();
+  }
+
+  fetchResponse(){
+    $.ajax({url: 'http://localhost:3001/test4'})
+      .done((data) => {
+        this.setState({
+          leader_id: data.leader_id,
+          users : data.users
+        })
+      })
+      .fail((err) => {
+          console.error(err)
+      })
+  }
   render(){
     return(
       <div id="bunch-container">
@@ -71,3 +68,4 @@ class BunchPage extends React.Component {
 
 
 export default BunchPage;
+
