@@ -1,0 +1,69 @@
+#bunch-header{
+  width: 100%;
+  height: 80px;
+
+  background-color: #e3535d;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
+
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 80px;
+  text-align: center;
+
+}
+
+#bunch-container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/bg_team_pc.svg');
+
+  position: relative;
+}
+
+.member{
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.member img{
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.member-list{
+  position: absolute;
+  width: 300px;
+  top: 50px;
+  left: 50px;
+
+}
+
+.bunch-leader{
+  background-image: url('./images/waku_leader.svg')
+}
+.bunch-members{
+  background-image: url('./images/waku_member.svg')
+}
+
+@media screen and (max-width: 375px) {
+  #file-container{
+    background-image: url('./images/bg_team.svg');
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .member img{
+    margin-top: 10px;
+  }
+}
+
+#bunch-back-button{
+  position: absolute;
+  left: 10px;
+  bottom: 60px;
+  height: 30px;
+}

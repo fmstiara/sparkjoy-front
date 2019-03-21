@@ -7,7 +7,8 @@ button {
   appearance: none;
 
   display: block;
-  margin: 2% auto;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .camera-area{
@@ -25,8 +26,42 @@ button {
   box-shadow: 0 0 8px rgba(0,0,0,0.8);
 
   margin: 0;
-
   border-radius: 40px 40px 0 0;
+}
+
+.ui-item{
+  height: 100%;
+}
+
+#back-button{
+  display: block;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#ui-area img{
+  display: block;
+  height: 60%;
+  margin: 20% auto;
+}
+
+#graphic{
+  display: block;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#graphic img{
+  display: block;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#finish-ui{
+  display: none;
 }
 
 #video{

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="348px" height="391px" viewBox="0 0 348 391" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M41.7996982,10.0893176 L309.814145,26.1990824 C326.352838,27.1931872 338.954216,41.4063279 337.960111,57.9450206 C337.959026,57.9630778 337.957924,57.981134 337.956806,57.9991892 L319.699334,352.838164 C318.700126,368.974325 305.094102,381.416522 288.933126,380.972703 L39.7621204,374.129874 C23.5428903,373.684456 10.6170008,360.424301 10.5857369,344.198986 L9.99976795,40.0930754 C9.96784277,23.5245636 23.3733949,10.0672506 39.9419066,10.0353254 C40.5615795,10.0341314 41.1811406,10.0521374 41.7996982,10.0893176 Z" id="path-1"></path>
+        <filter x="-4.6%" y="-4.0%" width="109.2%" height="108.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="バンチ情報" transform="translate(-21.000000, -259.000000)">
+            <g id="Group-14" transform="translate(21.000000, 259.000000)">
+                <g id="Group-16">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M31.7096989,1.58661516 C31.1220692,1.55129402 30.5334861,1.5341883 29.9447969,1.53532262 C14.2047107,1.56565153 1.46943625,14.3500989 1.49976516,30.0901851 L2.08573416,334.196096 C2.11543484,349.610145 14.3950298,362.207292 29.8032984,362.63044 L278.974304,369.473268 C294.327231,369.894896 307.252954,358.07481 308.202202,342.745456 L326.459674,47.9064815 C326.461259,47.8807523 326.461259,47.8807523 326.462814,47.8550213 C327.407213,32.1432632 315.435904,18.6407796 299.724146,17.69638 L31.7096989,1.58661516 Z" id="Rectangle" stroke="#000000" stroke-width="3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

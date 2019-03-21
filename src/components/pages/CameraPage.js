@@ -1,6 +1,8 @@
 import React from 'react'
 import $ from 'jquery'
+import { Link } from 'react-router-dom';
 import '../../styles/camera.css'
+import BackButton from '../BackButton'
 
 class CameraPage extends React.Component {
   constructor(props){
@@ -22,15 +24,25 @@ class CameraPage extends React.Component {
           <div className="mask loader" id="loader"></div>
           <div className="mask" id="last-layer"></div>
           <div id="ui-area" className="row">
-            <div className="col-4">
-              <button><img src="images/button_return.svg" alt="take"/></button>
+            <div className="col-4 ui-item">
+              <BackButton />
             </div>
-            <div className="col-4">
-              <button id="take-button"><img src="images/button_satsuei.svg" alt="take"/></button>
+            <div className="col-8 ui-item">
+              <div className="ui-item row" id="taking-ui">
+                <div className="col-6 ui-item">
+                  <button id="take-button"><img id="take-image" src="images/button_satsuei.svg" alt="take"/></button>
+                </div>
+                <div className="col-6 ui-item">
+                  <button id="toggle-button"><img src="images/button_change.svg" alt="take"/></button>
+                </div>
+              </div>
+              <div className="row ui-item" id="finish-ui">
+                <div className="col-12 ui-item">
+                  <div id="graphic"><img src="images/graphic_smile_web.svg" /></div>
+                </div>
+              </div>
             </div>
-            <div className="col-4">
-              <button id="toggle-button"><img src="images/button_change.svg" alt="take"/></button>
-            </div>
+
           </div>
         </div>
       </div>
@@ -57,6 +69,7 @@ class CameraPage extends React.Component {
         self.cameraInit()
         button.onclick = function(){
           document.getElementById('loader').style.visibility = 'visible'
+          document.getElementById('take-image').src = "images/button_finish.svg"
           self.getImageFromVideo(video)
           .then(res => self.detect(res))
           .then((res)=>{
@@ -68,6 +81,9 @@ class CameraPage extends React.Component {
               faceRectangles.push(v["faceRectangle"])
             })
 
+            document.getElementById('taking-ui').style.display = 'none';
+            document.getElementById('finish-ui').style.display = 'flex';
+            
             document.getElementById('loader').style.visibility = 'hidden'
             self.frameFace(canvas, faceRectangles)
             self.identify(faceIds)
@@ -94,6 +110,9 @@ class CameraPage extends React.Component {
     this.canvasReset(videoMask)
     this.canvasReset(canvasMask)
     loaderMask.style.visibility = 'hidden'
+    document.getElementById('take-image').src = "images/button_satsuei.svg"
+    document.getElementById('taking-ui').style.display = 'flex';
+    document.getElementById('finish-ui').style.display = 'none';
   }
 
   getImageFromVideo(video){
