@@ -1,5 +1,8 @@
 import React from 'react'
 import '../../styles/record.css'
+
+import RaderChart from '../RaderChart.js'
+
 class RecordPage extends React.Component {
   constructor(props){
     super(props)
@@ -51,10 +54,17 @@ class RecordPage extends React.Component {
 
           </div>
         </div>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-6" id="my-record">
-              MY
+              <RaderChart user_points={{
+                  "laugh_stg": 1,
+                  "rare_encount_point": 2,
+                  "taken_picture_with_many_people_point": 3,
+                  "take_good_picture_point": 4,
+                  "between_product_interact_point": 5,
+                  "diversity_point": 6
+              }} />
             </div>
             <div className="col-md-6" id="all-record">
               ALL
