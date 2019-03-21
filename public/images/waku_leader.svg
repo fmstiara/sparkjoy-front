@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="351px" height="147px" viewBox="0 0 351 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M40.988151,8.01652601 L311.302643,16.8482697 C327.334602,17.3720676 340.118204,30.414474 340.320614,46.4537104 L340.996562,100.016675 C341.204937,116.528634 328.029879,130.10442 311.519087,130.390726 L45.97781,134.995347 C30.1544307,135.269732 16.8393038,123.205448 15.5564058,107.431774 L10.1072434,40.4324446 C8.76413231,23.9184308 21.0625789,9.44237079 37.5765928,8.09925969 C38.7112879,8.00697313 39.8503163,7.97935056 40.988151,8.01652601 Z" id="path-1"></path>
+        <filter x="-4.5%" y="-11.8%" width="109.1%" height="123.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="バンチ情報" transform="translate(-19.000000, -105.000000)">
+            <g id="Group-13" transform="translate(19.000000, 107.000000)">
+                <g id="Group-15">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M30.939169,1.51572605 C29.858226,1.48040937 28.776149,1.50665081 27.6981887,1.59432305 C12.0098755,2.87027859 0.326351219,16.6225356 1.60230676,32.3108487 L7.05146911,99.3101779 C8.27022228,114.295168 20.9195928,125.756238 35.9518031,125.495572 L301.49308,120.890951 C317.178333,120.618961 329.694638,107.721964 329.496681,92.0356029 L328.820734,38.4726384 C328.628444,23.2353638 316.484022,10.8450777 301.253661,10.3474697 L30.939169,1.51572605 Z" id="Rectangle" stroke="#000000" stroke-width="3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
