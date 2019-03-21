@@ -17,7 +17,7 @@ class BunchPage extends React.Component {
   fetchResponse(){
     $.ajax({
         url: 'http://localhost:3001/test4',
-        ype: "GET"
+        type: "GET"
     })
     .done((data) => {
       this.setState({
