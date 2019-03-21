@@ -74,6 +74,8 @@
   background-color: #047073;
   border-radius: 0 0 40px 40px;
   box-shadow: 0 0 8px rgba(0,0,0,0.4);
+
+  z-index: 99;
 }
 
 .record-list-item{

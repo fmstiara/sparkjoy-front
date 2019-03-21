@@ -11,6 +11,7 @@ const MAX_DIVERSITY_POINT = 10
 class RaderChart extends React.Component {
   constructor(props){
     super(props)
+    console.log(this.props)
   }
 
   render(){
@@ -25,16 +26,27 @@ class RaderChart extends React.Component {
     this.draw()
   }
 
+  componentDidUpdate(){
+    console.log(this.props)
+    this.draw()
+  }
+
   draw(){
     const self = this
     const canvas = document.getElementById('rader-canvas')
+    const data = this.props.event_records["event_records"]
+    if(data == undefined){
+      return
+    }
+    const user_points = data["user_points"]
+    
     new Chart(canvas, {
       type: 'radar',
       data: {
         labels: ['笑顔', 'レア', 'たくさん', '良い', '交流', '年齢'],
         datasets: [{
           label: '個人ポイント',
-          data: self.normalizeUserPoints(this.props.user_points),
+          data: self.normalizeUserPoints(user_points),
           backgroundColor: 'RGBA(243,180,183,0.5)',
           borderColor: 'RGBA(255,127,150,1)',
           borderWidth: 4,

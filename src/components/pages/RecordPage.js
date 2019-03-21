@@ -15,14 +15,10 @@ class RecordPage extends React.Component {
         date: ""
       },
       events: [],
-      eventRecords: [],
+      eventRecords: {},
       bunchRecords: []
 
     }
-  }
-
-  componentWillMount(){
-    this.fetchResponse();
   }
 
   fetchResponse(){
@@ -47,8 +43,8 @@ class RecordPage extends React.Component {
             <div id="bunch-name">{this.state.bunchName}</div>
             <div id="bunch-record">
 
-              <div id="bunch-record-name">{this.state.displayEvent.date} バンチ対抗戦 <span id="pulldown-mark"><i class="fas fa-angle-down"></i></span></div>
-              <div id="pulldown-mark-line"><i class="fas fa-angle-down"></i></div>
+              <div id="bunch-record-name">{this.state.displayEvent.date} バンチ対抗戦 <span id="pulldown-mark"><i className="fas fa-angle-down"></i></span></div>
+              <div id="pulldown-mark-line"><i className="fas fa-angle-down"></i></div>
 
             </div>
           </button>
@@ -66,14 +62,7 @@ class RecordPage extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6" id="my-record">
-              <RaderChart user_points={{
-                  "laugh_stg": 1,
-                  "rare_encount_point": 2,
-                  "taken_picture_with_many_people_point": 3,
-                  "take_good_picture_point": 4,
-                  "between_product_interact_point": 5,
-                  "diversity_point": 6
-              }} />
+              <RaderChart event_records={this.state.eventRecords} />
             </div>
             <div className="col-md-6" id="all-record">
               ALL
@@ -91,6 +80,7 @@ class RecordPage extends React.Component {
   }
 
   componentWillMount(){
+    this.fetchResponse();
     window.onresize = ()=>{
       this.setState({windowWidth: window.innerWidth})
     }
@@ -107,7 +97,6 @@ class RecordPage extends React.Component {
       }
     }
   }
-}
 
   changeRecord(displayEvent){
     $.ajax({url: 'http://localhost:3001/test2'})
@@ -115,7 +104,7 @@ class RecordPage extends React.Component {
         this.setState({
           eventRecords: data
         });
-        console.log(this.state.eventRecords)
+        console.log(this.state.eventRecords["event_records"]["user_points"])
       })
       .fail((err) => {
         console.error(err);
