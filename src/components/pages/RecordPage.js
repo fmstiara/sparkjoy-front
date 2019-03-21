@@ -20,6 +20,9 @@ class RecordPage extends React.Component {
   }
 
   componentWillMount(){
+    window.onresize = ()=>{
+      this.setState({windowWidth: window.innerWidth})
+    }
     this.fetchResponse();
   }
 
@@ -81,12 +84,6 @@ class RecordPage extends React.Component {
     this.changeRecord(this.state.displayEvent)
   }
 
-  componentWillMount(){
-    window.onresize = ()=>{
-      this.setState({windowWidth: window.innerWidth})
-    }
-  }
-
   componentDidMount(){
     if(window.innerWidth < 768){
       if(this.state.graphToggle){
@@ -98,7 +95,6 @@ class RecordPage extends React.Component {
       }
     }
   }
-}
 
   changeRecord(displayEvent){
     $.ajax({url: 'http://localhost:3001/test2'})
