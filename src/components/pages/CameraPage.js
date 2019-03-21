@@ -74,17 +74,17 @@ class CameraPage extends React.Component {
           .then((res)=>{
             let canvas = document.getElementById('video-mask')
             let faceIds = []
-            let faceRectangles = []
+            let faceInfo = []
             res.forEach(v => {
               faceIds.push(v["faceId"])
-              faceRectangles.push(v["faceRectangle"])
+              faceInfo.push({rectangle:v["faceRectangle"], faceAttribute:v["faceAttributes"]})
             })
 
             document.getElementById('taking-ui').style.display = 'none';
             document.getElementById('finish-ui').style.display = 'flex';
             
             document.getElementById('loader').style.visibility = 'hidden'
-            self.frameFace(canvas, faceRectangles)
+            self.frameFace(canvas, faceInfo)
             self.identify(faceIds)
           })
         }
@@ -187,20 +187,48 @@ class CameraPage extends React.Component {
         console.error(err);
     })
   }
-  
-  frameFace(canvas, rectangles){
+
+  frameFace(canvas, faceInfos){
+        
     let ctx = canvas.getContext('2d')
 
-    rectangles.forEach(rectangle => {
+    let j = 0
+    faceInfos.forEach(faceInfo => {
+      const rectangle = faceInfo["rectangle"]
+      const faceAttributes = faceInfo["faceAttribute"]
+
       const top = rectangle["top"]
       const left = rectangle["left"]
       const width = rectangle["width"]
       const height = rectangle["height"]
-  
+
       ctx.lineWidth = 10;
-      ctx.strokeStyle = 'rgba(255, 80, 77, 0.7)'
-      ctx.rect(left, top, width, height)
-      ctx.stroke()
+      let emotion = faceAttributes['emotion']
+      let happiness = emotion['happiness']
+      if(happiness > 0.9){
+        ctx.strokeStyle = 'rgba(227, 83, 93, 0.7)'
+      }else if(happiness > 0.8 && happiness <= 0.9){
+        ctx.strokeStyle = 'rgba(232, 104, 79, 0.7)'
+      }else if(happiness > 0.7 && happiness <= 0.8){
+        ctx.strokeStyle =  'rgba(235, 122, 65, 0.7)'
+      }else if(happiness > 0.6 && happiness <= 0.7){
+        ctx.strokeStyle =  'rgba(238, 137, 54, 0.7)'
+      }else if(happiness > 0.5 && happiness <= 0.6){
+        ctx.strokeStyle = 'rgba(245, 166, 35, 0.7)'
+      }else if(happiness > 0.4 && happiness <= 0.5){
+        ctx.strokeStyle =  'rgba(211, 155, 45, 0.7)'
+      }else if(happiness > 0.3 && happiness <= 0.4){
+        ctx.strokeStyle =  'rgba(177, 155, 56, 0.7)'
+      }else if(happiness > 0.2 && happiness <= 0.3){
+        ctx.strokeStyle = 'rgba(135, 151, 65, 0.7)'
+      }else if(happiness > 0.1 && happiness <= 0.2){
+        ctx.strokeStyle = 'rgba(64, 137, 86, 0.7)'
+      }else{
+        ctx.strokeStyle = 'rgba(4, 112, 115, 0.7)'
+      }
+      console.log(ctx.strokeStyle)
+
+      ctx.strokeRect(left, top, width, height)
     })
   }
 }
