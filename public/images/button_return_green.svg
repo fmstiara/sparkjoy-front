@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="79px" viewBox="0 0 79 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="59" height="59" rx="29.5"></rect>
+        <filter x="-27.1%" y="-30.5%" width="154.2%" height="154.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.41 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="記録（WEB）" transform="translate(-30.000000, -661.000000)">
+            <g id="Group-9" transform="translate(40.000000, 669.000000)">
+                <g id="Rectangle-Copy" transform="translate(29.500000, 29.500000) rotate(-180.000000) translate(-29.500000, -29.500000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#047073" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group" transform="translate(14.000000, 18.000000)">
+                    <g id="Orion_undo" transform="translate(15.000000, 11.500000) scale(1, -1) translate(-15.000000, -11.500000) ">
+                        <path d="M3.92761905,14.72 L23.3714286,14.72 C27.0322875,14.72 30,11.4248158 30,7.36 C30,3.29518424 27.0322875,0 23.3714286,0 L3.48571429,0" id="Path" fill="#FED568"></path>
+                        <path d="M1.44190476,17.48 L20.8857143,17.48 C24.5465732,17.48 27.5142857,14.1848158 27.5142857,10.12 C27.5142857,6.05518424 24.5465732,2.76 20.8857143,2.76 L1,2.76" id="Path" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <polyline id="Path" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="6.62857143 11.96 0.828571429 17.48 6.62857143 23"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
