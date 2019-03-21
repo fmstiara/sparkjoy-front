@@ -15,19 +15,16 @@ class BunchPage extends React.Component {
   }
 
   fetchResponse(){
-    $.ajax({
-        url: 'http://localhost:3001/test4',
-        type: "GET"
-    })
-    .done((data) => {
-      this.setState({
-        leader_id: data.leader_id,
-        users : data.users
-      });
-    })
-    .fail(function(err) {
-        console.error(err);
-    })
+    $.ajax({url: 'http://localhost:3001/test4'})
+      .done((data) => {
+        this.setState({
+          leader_id: data.leader_id,
+          users : data.users
+        })
+      })
+      .fail((err) => {
+          console.error(err)
+      })
   }
 
   render(){

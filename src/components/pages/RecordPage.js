@@ -1,6 +1,7 @@
 import React from 'react'
 import $ from 'jquery'
 import '../../styles/record.css'
+
 class RecordPage extends React.Component {
   constructor(props){
     super(props)
@@ -21,20 +22,17 @@ class RecordPage extends React.Component {
   }
 
   fetchResponse(){
-    $.ajax({
-        url: 'http://localhost:3001/test1',
-        type: "GET"
-    })
-    .done((data) => {
-      this.setState({
-        displayEvent: data.events[data.events.length - 1],
-        events: data.events
+    $.ajax({url: 'http://localhost:3001/test1'})
+      .done((data) => {
+        this.setState({
+          displayEvent: data.events[data.events.length - 1],
+          events: data.events
+        })
+        this.changeRecord(this.state.displayEvent)
       })
-      this.changeRecord(this.state.displayEvent)
-    })
-    .fail(function(err) {
-        console.error(err);
-    })
+      .fail((err) => {
+          console.error(err);
+      })
   }
 
   render(){
@@ -73,27 +71,26 @@ class RecordPage extends React.Component {
 
   changeRecord(displayEvent){
     $.ajax({url: 'http://localhost:3001/test2'})
-    .done((data) => {
-      this.setState({
-        eventRecords: data
-      });
-      console.log(this.state.eventRecords)
-    })
-    .fail(function(err) {
-      console.error(err);
-    })
+      .done((data) => {
+        this.setState({
+          eventRecords: data
+        });
+        console.log(this.state.eventRecords)
+      })
+      .fail((err) => {
+        console.error(err);
+      })
 
     $.ajax({url: 'http://localhost:3001/test3'})
-    .done((data) => {
-      this.setState({
-        bunchRecords: data
-      });
-      console.log(this.state.bunchRecords)
-    })
-    .fail(function(err) {
-      console.error(err);
-    })
-
+      .done((data) => {
+        this.setState({
+          bunchRecords: data
+        });
+        console.log(this.state.bunchRecords)
+      })
+      .fail((err) => {
+        console.error(err);
+      })
   }
 }
 
