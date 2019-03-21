@@ -1,0 +1,121 @@
+{
+    "test1": {
+        "events": [
+            {
+                "id": 10,
+                "name": "event1",
+                "date": "2019-01"
+            },
+            {
+                "id": 11,
+                "name": "event2",
+                "date": "2019-02"
+            },
+            {
+                "id": 12,
+                "name": "event3",
+                "date": "2019-03"
+            },
+            {
+                "id": 13,
+                "name": "event4",
+                "date": "2019-04"
+            }
+        ]
+    },
+    "test2": {
+        "event_records": {
+            "user_points": {
+                "laugh_stg": 0.5,
+                "rare_encount_point": 2,
+                "taken_picture_with_many_people_point": 10,
+                "take_good_picture_point": 5,
+                "between_product_interact_point": 5,
+                "diversity_point": 5
+            },
+            "user_score": 80,
+            "bunch_score": 85
+        }
+    },
+    "test3":{
+        "bunch_records": {
+            "bunch_score_sum": 200,
+            "user_score_sum": 160,
+            "bunch_scores":[
+                {
+                    "date": "2019-01",
+                    "score": 20
+                },
+                {
+                    "date": "2019-02",
+                    "score": 30
+                },
+                {
+                    "date": "2019-03",
+                    "score": 50
+                },
+                {
+                    "date": "2019-04",
+                    "score": 20
+                },
+                {
+                    "date": "2019-05",
+                    "score": 30
+                },
+                {
+                    "date": "2019-06",
+                    "score": 50
+                }
+            ],
+            "user_scores":[
+                {
+                    "date": "2019-01",
+                    "score": 10
+                },
+                {
+                    "date": "2019-02",
+                    "score": 17
+                },
+                {
+                    "date": "2019-03",
+                    "score": 60
+                },
+                {
+                    "date": "2019-04",
+                    "score": 10
+                },
+                {
+                    "date": "2019-05",
+                    "score": 13
+                },
+                {
+                    "date": "2019-06",
+                    "score": 60
+                }
+            ]
+        }
+    },
+    "test4":{
+        "leader_id": 1,
+        "users": [
+            {
+                "id": 1,
+                "name": "Alice",
+                "product_team_name": "unipos",
+                "score_sum": 5
+            },
+            {
+                "id": 2,
+                "name": "Bob",
+                "product_team_name": "unipos",
+                "score_sum": 10
+            },
+            {
+                "id": 3,
+                "name": "Charlie",
+                "product_team_name": "dAd",
+                "score_sum": 10
+            }
+        ]
+    }
+}
