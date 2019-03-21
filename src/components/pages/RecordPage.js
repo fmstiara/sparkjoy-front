@@ -85,6 +85,7 @@ class RecordPage extends React.Component {
     this.changeRecord(this.state.displayEvent)
   }
 
+
   componentWillMount(){
     this.fetchResponse();
     window.onresize = ()=>{
